@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World campus</title>
+    <link rel="stylesheet" href="uni.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;
+    700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
+     rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+
+        <nav>
+            <a href="uni.html"><img src="images/logo.png"></a>
+
+            <div class="nav-links" id="navLinks">
+                <img src="./images/x.png" onclick="hideMenu()" class="iconns">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Course</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <img src="./images/menu.png" onclick="showMenu()" class="iconns">
+        </nav>
+
+    <div class="text-box">
+        <h1>World's Biggest University</h1>
+        <p>Making website is now one of the easiest thing
+            in the world. You just need to Learn HTML, CSS,
+            <br>Javascript and you're good to go.
+        </p>
+        <a href="" class="link-btn">Visit Us To Know More</a>
+    </div>
+
+    </section>
+
+
+    <!--course-->
+
+    <section class="course">
+        <h1>courses We offer</h1>
+        <p>Lorem ipsum dolor  Voluptatibus doloremque minus natus quo maxime.</p>
+
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Aperiam quisquam iusto vel aliquid atque odit
+                    fugit labore deleniti? Perspiciatis, ipsum tenetur
+                    earum repudiandae porro quaerat nemo? Aperiam nam 
+                    perferendis repellat.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Aperiam quisquam iusto vel aliquid atque odit
+                    fugit labore deleniti? Perspiciatis, ipsum tenetur
+                    earum repudiandae porro quaerat nemo? Aperiam nam 
+                    perferendis repellat.
+                </p>
+            </div>
+            <div class="course-col">
+                <h3>Poster Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing 
+                    elit. Aperiam quisquam iusto vel aliquid atque odit
+                    fugit labore deleniti? Perspiciatis, ipsum tenetur
+                    earum repudiandae porro quaerat nemo? Aperiam nam 
+                    perferendis repellat.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--------campus------->
+
+    <section class="campus">
+        <h1>Our Global Campus</h1>
+        <p>Lorem ipsum dolor  Voluptatibus doloremque minus natus quo maxime.</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png">
+                <div class="layer">
+                    <h3>LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png">
+                <div class="layer">
+                    <h3>WASHINGTON</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<!---javascript for toggle Menu-->
+<script>
+    let navLinks = document.getElementById("navLinks");
+
+    function showMenu() {
+        navLinks.style.right = "0"; //we are chaging right value    
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px"; //we are chaging right value    
+    }
+</script>
+    
+</body>
+</html>
