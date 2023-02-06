@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
     <link rel="stylesheet" href="uni.css">
+    <link rel="stylesheet" href="css/all.css">
 </head>
 <body>
 
@@ -32,11 +33,11 @@
             <div class="nav-links" id="navLinks">
                 <img src="./images/x.png" onclick="hideMenu()" class="iconns">
                 <ul>
-                    <li><a href="#">Home</a></li>
+                    <li><a href="uni.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Course</a></li>
+                    <li><a href="course.html">Course</a></li>
                     <li><a href="blog.html">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
             <img src="./images/menu.png" onclick="showMenu()" class="iconns">
@@ -63,18 +64,21 @@
     <div class="row">
         <div class="contact-col">
             <div>
+                <i class="fa fa-home"></i>
                 <span>
                     <h5>XYZ Road, ABC Building</h5>
                     <p>Bangalore, Karnataka, IN</p>
                 </span>
             </div>
             <div>
+                <i class="fa fa-phone"></i>
                 <span>
                     <h5>+1 01226456765</h5>
                     <p>Monday to saturday, 10AM to 6PM</p>
                 </span>
             </div>
             <div>
+                <i class="fa fa-envelope-o"></i>
                 <span>
                     <h5>info@brianaginga35.com</h5>
                     <p>Email us your query</p>
@@ -83,11 +87,11 @@
         </div>
         <div class="contact-col">
 
-            <form action="">
-                <input type="text" placeholder="Enter your name" required>
-                <input type="email" placeholder="Enter Email Address" required>
-                <input type="text" placeholder="Enter your subject" required>
-                <textarea rows="8" placeholder="message" required></textarea>
+            <form action="form-handler.php" method="post">
+                <input type="text" name="name" placeholder="Enter your name" required>
+                <input type="email" name="email" placeholder="Enter Email Address" required>
+                <input type="text" name="subject" placeholder="Enter your subject" required>
+                <textarea rows="8"  name="message" placeholder="message" required></textarea>
                 <button type="submit" class="link-btn red-btn" >send message</button>
             </form>
 
